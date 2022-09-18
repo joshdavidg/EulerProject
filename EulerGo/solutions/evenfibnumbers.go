@@ -22,9 +22,7 @@ func SumEvenFibNumbers() (sum int) {
 //Notice pattern is every 3rd value is even.
 //Use Binet's formula for O(1) fibonacci
 func fibonacci(n int) (fib int) {
-	goldenRatio := 1.618
-	inverseGR := -0.618
-	floatN := float64(n)
-	floatVal := (math.Pow(goldenRatio, floatN) - math.Pow(inverseGR, floatN)) / math.Sqrt(5)
+	goldenRatio := math.Pow((1+math.Sqrt(5))/2, float64(n))
+	floatVal := goldenRatio / math.Sqrt(5)
 	return int(math.Round(floatVal))
 }
