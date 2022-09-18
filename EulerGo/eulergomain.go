@@ -1,8 +1,14 @@
 package main
 
-import "github.com/joshdavidg/EulerProject/EulerGo/solutions"
+import (
+	"fmt"
+
+	"github.com/joshdavidg/EulerProject/EulerGo/solutions"
+)
 
 func main() {
-	sumMultiplesOf3or5()
-	sumEvenFibNumbers()
+	q1 := solutions.SumMultiplesOf3or5()
+	fmt.Println("Sum of multiples of 3 or 5 from 1 to 1000: ", q1)
+	q2 := solutions.SumEvenFibNumbers()
+	fmt.Println("Sum of even fibonacci terms less than 4 mill: ", q2)
 }
