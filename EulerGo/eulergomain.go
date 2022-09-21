@@ -15,4 +15,6 @@ func main() {
 	fmt.Println("The largest prime factor of 600851475143 is: ", q3)
 	q4 := solutions.LargestPalidromeProduct()
 	fmt.Println("The largest palidrome product from two 3 digit numbers is: ", q4)
+	q5 := solutions.SmallestMultiple()
+	fmt.Println("The smallest number divisible by all numbers 1 -> 20 is: ", q5)
 }
