@@ -17,4 +17,6 @@ func main() {
 	fmt.Println("Q4 - The largest palidrome product from two 3 digit numbers is: ", q4)
 	q5 := solutions.SmallestMultiple()
 	fmt.Println("Q5 - The smallest number divisible by all numbers 1 -> 20 is: ", q5)
+	q6 := solutions.SumSquareDifference(100)
+	fmt.Println("Q6 - The difference between the sum of squares and the square of the sum for the first 100 natural numbers is: ", q6)
 }
